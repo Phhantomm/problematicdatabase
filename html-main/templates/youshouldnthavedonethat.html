@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{super()}}
+<audio autoplay="" src="{{url_for('static', filename='The Whistle of Death - Puss in Boots 2.mp3')}}"></audio>
+    <img src="{{url_for('static', filename='Capture.PNG')}}" style="margin-left:350px ;">
+{% endblock %}

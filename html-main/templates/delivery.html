@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {{super()}}
+    <audio autoplay="" loop="" src="{{url_for('static', filename='Kokkoku op Flashback by MIYAVI vs. KenKen but only the _good part_.mp3')}}"> </audio>
+    <img src="{{url_for('static', filename='0f2dd3ef2bf23f8ce019b5cf7eb2784f.gif')}}" style="margin-left:350px ;">
+    <a class="isarqaviatqveniip"> ჩვენ თქვენი ip მისამართი ვიცით და მოვდივართ (317 მეტრიც)</a>
+    <h3>წიგნის დამატება</h3>
+    <form method="post" style="width:50%; margin-left: 10px">
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Book Title"><br>
+        <input type="text" name="author" class="form-control" placeholder="Book Author"><br>
+        <input type="text" name="price" class="form-control"  placeholder="Price"><br>
+      </div>
+    <button type="submit" class="btn btn-primary">Add Book</button>
+    </form>
+{% endblock %}
